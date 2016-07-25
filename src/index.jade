@@ -17,8 +17,60 @@ html(lang='en')
       });
       ga('send', 'pageview');
   body
-    .center
-      h1 Frontend Bootstrap!
-      i.fa.fa-heart(aria-hidden="true")
+    header.header
+      img.header-logo(src='')
+      .header-actions
+        a.social-link(href='#')
+          | f
+        button.button-base
+          | sumate
+    .section.section-main
+      h1.main-header
+        | Saber es bla, lala alimentar
+    .section.section-steps
+      .step
+        img.step-image(src='')
+        h1.step-title
+          | lala
+        p.step-description
+          | Saber es bla, lala alimentar
+      .step
+        img.step-image(src='')
+        h1.step-title
+          | lala
+        p.step-description
+          | Saber es bla, lala alimentar
+      .step
+        img.step-image(src='')
+        h1.step-title
+          | lala
+        p.step-description
+          | Saber es bla, lala alimentar
+    .section
+      h1.section-title
+        | lala
+      p.section-description
+        | ¿Sos un ente gastronómico y tenés excedente de comida que puede ser consumida? ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación. #lacomidanosetira.
+    .section.clients
+      .client-type
+        h1.client-title
+          | lala
+      .client-type
+        h1.client-title
+          | lala
+    .section
+      h1.section-title
+        | lala
+      p.section-description
+        | ¿Sos un ente gastronómico y tenés excedente de comida que puede ser consumida? ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación. #lacomidanosetira.
+    .section
+      h1.section-title
+        | lala
+      p.section-description
+        | ¿Sos un ente gastronómico y tenés excedente de comida que puede ser consumida? ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación. #lacomidanosetira.
+      form.contact-form
+        input.input-base(type='email')
+        button.button-base
+    footer.footer
     // inject:js
     // endinject
