@@ -1,16 +1,47 @@
-body {
-  background-image: url('../assets/wolox_bg.png');
+h1,h2,h3,h4,h5,h6,span,a,button {
+  margin: 0;
 }
 
-.center {
-  background-color: $translucent-white;
-  height: 100%;
-  left: 20%;
-  position: absolute;
-  text-align: center;
-  width: 60%;
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
-  h1 {
-    color: $wolox-green;
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+
+  &.grey {
+    background: $grey;
   }
+
+  &.orange {
+    background: $orange1;
+  }
+}
+
+.participants {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .participant {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+}
+
+.section-content-wrapper {
+  max-width: 940px;
 }

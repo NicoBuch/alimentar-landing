@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Oswald:400,700);
+
+// text
+
+.base-text {
+  color: $black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.headline1 {
+  font-family: 'Oswald', sans-serif;
+  color: $orange1;
+  font-size: 70px;
+  line-height: 90px;
+}
+
+.headline2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 45px;
+  line-height: 70px;
+}
+
+.headline3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+}
+
+.headline4 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.title1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.title2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: $orange1;
+}
+
+.text1 {
+  color: $grey;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+}
+
+// input
+
+.base-input {
+  border: 2px solid $orange1;
+  height: 50px;
+  max-width: 435px;
+  width: 100%;
+}
+
+// button
+
+.base-button,
+.base-button:active {
+  background: $orange1;
+  font-family: 'Oswald', sans-serif;
+  height: 50px;
+  min-width: 240px;
+  text-transform: uppercase;
+  border: 0;
+
+  &:focus {
+    background: $orange2;
+  }
+}
