@@ -21,188 +21,190 @@ html(lang='en')
       img.header-logo(src='https://placehold.it/200x50')
       .header-actions
         a.social-link(href='#')
-          | f
+          img(src='assets/ic_facebook.svg')
     .section.section-main.row.center-xs
       .main-content-wrapper
         h1.base-text.headline2
           | El problema de la comida se soluciona con comida
-        h1.base-text.headline1
+        h1.base-text.headline1.orange
           | #lacomidanosetira
         button.base-button
           | quiero participar
     .section.section-steps
       .section-content-wrapper
-        h1.headline3
+        h1.base-text.headline3
           | We campaign for a world where human rights are enjoyed by all
-        p.title2
+        p.base-text.title2.orange
           | Amnesty International is a global movement of more than 7 million people in over 150 countries and territories who campaign to end abuses of human rights.
-        .steps.row.around-xs
-          .step.col-xs-3
-            img.step-image(src='https://placehold.it/200x50')
-            h1.headline4
-              | Comida a donar
-            p.text1
-              | El donante carga el detalle de la comida a donar y el horario para ser retirada
-          .step.col-xs-3
-            img.step-image(src='https://placehold.it/200x50')
-            h1.headline4
-              | Comida en camino
-            p.text1
-              | El voluntario recibe un alerta de acuerdo a su localización  de la comida lista para donar y la retira
-          .step.col-xs-3
-            img.step-image(src='https://placehold.it/200x50')
-            h1.headline4
-              | Comida entregada
-            p.text1
-              | El voluntario entrega la comida en el comedor social mas cercano
-    .section.orange
+      .steps.row.around-xs
+        .step.col-xs-4
+          img.step-image(src='assets/img_step1.png')
+          h1.base-text.headline4.upper
+            | Comida a donar
+          p.base-text.text1.grey
+            | El donante carga el detalle de la comida a donar y el horario para ser retirada
+        .step.col-xs-4
+          img.step-image(src='assets/img_step2.png')
+          h1.base-text.headline4.upper
+            | Comida en camino
+          p.base-text.text1.grey
+            | El voluntario recibe un alerta de acuerdo a su localización  de la comida lista para donar y la retira
+        .step.col-xs-4
+          img.step-image(src='assets/img_step3.png')
+          h1.base-text.headline4.upper
+            | Comida entregada
+          p.base-text.text1.grey
+            | El voluntario entrega la comida en el comedor social mas cercano
+    .section.section-volunteer.orange
       .section-content-wrapper
-        h1.headline3
+        h1.base-text.headline3.upper
           | Voluntario
-        h2.title2
+        h2.base-text.title2.white
           | ¿Querés ayudar con la causa pero no tenés tiempo?
-        p.text1
+        p.base-text.text1
           | Proyecto Alimentar te propone realizar entregas en el tiempo en que vas a otro lugar. Ingresá a la app, chequea en el mapa cual es el ente gastronómico que tiene comida para donar y que se encuentra en el recorrido que debes hacer, elegi el comedor comunitario más cercano para entregar la donación y comprometete!
-    .section.clients
+    .section.section-clients
       .client-types.row.around-xs
-        .client-type.col-xs-4
-          h1.headline3
+        .client-type.donor-type.col-xs-6
+          h1.base-text.headline3.orange.upper
             | Donante
-          h2.title2
+          h2.base-text.title2
             | ¿Sos un ente gastronómico y tenés excedente de comida que puede ser consumida?
-          p.text1
+          p.base-text.text1
             | ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación.
-        .client-type.col-xs-4
-          h1.headline3
+        .client-type.volunteer-type.col-xs-6
+          h1.base-text.headline3.orange.upper
             | Comedor
-          h2.title2
+          h2.base-text.title2
             | ¿Querés sumarte a la red de comedores que reciben alimentos?
-          p.text1
+          p.base-text.text1
             | ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación.
     .section
-      h1.headline3
+      h1.base-text.headline3
         | ¡Sumate!
-      p.section-description
+      p.base-text.section-description
         | Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
       form.contact-form
         input.base-input(type='email')
         button.base-button
           | Enviar
     .section.grey
-      h1.headline3
+      h1.base-text.headline3
         | Lorem ipsum
       .facts.row.center-xs
         .fact.col-xs-3
-          h1.headline1
+          h1.base-text.headline1
             | 1.500.000
-          h2.title2
+          h2.base-text.title2
             | Toneladas
-          p.text1
+          p.base-text.text1
             | Cantidad de comida apta para ser consumido que se desperdicia por año en Argentina
         .fact.col-xs-3
-          h1.headline1
+          h1.base-text.headline1
             | 550.000
-          h2.title2
+          h2.base-text.title2
             | Platos
-          p.text1
+          p.base-text.text1
             | Cantidad de platos de comida que se estima se desperdician por día solo en la Ciudad Autónoma de Buenos Aires.
         .fact.col-xs-3
-          h1.headline1
+          h1.base-text.headline1
             | 600.000
-          h2.title2
+          h2.base-text.title2
             | Personas
-          p.text1
+          p.base-text.text1
             | Son las que concurren cada día a los centros comunitarios de la red de Cáritas de todo el país.
     .section
-      h1.headline3
+      h1.base-text.headline3
         | Quienes somos
-      p.text2
+      p.base-text.text2
         | Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
       .participants
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/angeles_benitez.png')
+          h1.base-text.title1
             | Angeles Benitez
-          h2.text3
+          h2.base-text.text3
             | Reaserch
-          p.text1
+          p.base-text.text1
             | fghjkl
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/florencia_williams.png')
+          h1.base-text.title1
             | FLORENCIA WILLIAMS
-          h2.text3
+          h2.base-text.text3
             | Redacción legislativa
-          p.text1
+          p.base-text.text1
             | Abogada
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/leonel_badi.png')
+          h1.base-text.title1
             | LEONEL BADI
-          h2.text3
+          h2.base-text.text3
             | Desarrollador
-          p.text1
+          p.base-text.text1
             | Estudiante de ingeniería en informática ITBA
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/nicolas_buchhalter.png')
+          h1.base-text.title1
             | NICOLÁS BUCHHALTER
-          h2.text3
+          h2.base-text.text3
             | Desarrollador
-          p.text1
+          p.base-text.text1
             | Estudiante de ingeniería en informática ITBA
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/paula_albarracin.png')
+          h1.base-text.title1
             | PAULA ALBARRACIN
-          h2.text3
+          h2.base-text.text3
             | ?
-          p.text1
+          p.base-text.text1
             | Estudiante de Arquitectura y Voluntaria en Un Techo para mi País. Participante del Bootcamp Trama, Idea y Emprendimiento en Alimentar.
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/rocio_rivera.png')
+          h1.base-text.title1
             | ROCÍO RIVERA
-          h2.text3
+          h2.base-text.text3
             | ?
-          p.text1
+          p.base-text.text1
             | Lic. en Comercialización y Lic. en Comercio Internacional.
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/sofia_mazzina.png')
+          h1.base-text.title1
             | SOFIA MAZZINA
-          h2.text3
+          h2.base-text.text3
             | Research
-          p.text1
+          p.base-text.text1
             | Est. De Psicología USAL
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/anabella_mazzuca.png')
+          h1.base-text.title1
             | ANABELLA MAZZUCA
-          h2.text3
+          h2.base-text.text3
             | Diseñadora
-          p.text1
+          p.base-text.text1
             | Estudiante Diseño Gráfico UBA
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/santiago_bermudez.png')
+          h1.base-text.title1
             | SANTIAGO BERMÚDEZ BAGLIETTO
-          h2.text3
+          h2.base-text.text3
             | ?
-          p.text1
+          p.base-text.text1
             | ?
         .participant
-          img.participant-image(src='https://placehold.it/200x50')
-          h1.title1
+          img.participant-image(src='assets/francisco_depascuali.png')
+          h1.base-text.title1
             | FRANCISCO DEPASCUALI
-          h2.text3
+          h2.base-text.text3
             | Desarrollador
-          p.text1
+          p.base-text.text1
             | Estudiante de ingeniería en informática ITBA
     footer.footer
       img.logo(src='https://placehold.it/200x50')
-      span.text2
       a.social-link(href='#')
+        img(src='assets/ic_facebook.svg')
+      span.base-text.text2
+        | lorem.ipsum@loremipsum.com
 
     // inject:js
     // endinject

@@ -6,11 +6,30 @@
   color: $black;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+
+  &.white {
+    color: $white;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.grey {
+    color: $grey;
+  }
+
+  &.orange {
+    color: $orange1;
+  }
+
+  &.upper {
+    text-transform: uppercase;
+  }
 }
 
 .headline1 {
   font-family: 'Oswald', sans-serif;
-  color: $orange1;
   font-size: 70px;
   line-height: 90px;
 }
@@ -24,38 +43,43 @@
 .headline3 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
+  line-height: 40px;
 }
 
 .headline4 {
   font-size: 18px;
+  line-height: 24px;
   font-weight: bolder;
 }
 
 .title1 {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .title2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  color: $orange1;
+  line-height: 24px;
 }
 
 .text1 {
-  color: $grey;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .text2 {
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
 }
 
 .text3 {
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
+  line-height: 20px;
 }
 
 // input
@@ -72,9 +96,14 @@
 .base-button,
 .base-button:active {
   background: $orange1;
+  color: $white;
   font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 50px;
   height: 50px;
   min-width: 240px;
+  padding: 0 15px;
   text-transform: uppercase;
   border: 0;
 
