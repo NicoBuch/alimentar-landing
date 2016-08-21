@@ -64,21 +64,23 @@ html(lang='en')
         p.base-text.text1
           | Proyecto Alimentar te propone realizar entregas en el tiempo en que vas a otro lugar. Ingresá a la app, chequea en el mapa cual es el ente gastronómico que tiene comida para donar y que se encuentra en el recorrido que debes hacer, elegi el comedor comunitario más cercano para entregar la donación y comprometete!
     .section.section-clients
-      .client-types.row.around-xs
-        .client-type.donor-type.col-xs-6
-          h1.base-text.headline3.orange.upper
-            | Donante
-          h2.base-text.title2
-            | ¿Sos un ente gastronómico y tenés excedente de comida que puede ser consumida?
-          p.base-text.text1
-            | ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación.
-        .client-type.volunteer-type.col-xs-6
-          h1.base-text.headline3.orange.upper
-            | Comedor
-          h2.base-text.title2
-            | ¿Querés sumarte a la red de comedores que reciben alimentos?
-          p.base-text.text1
-            | ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación.
+      .client-types
+        .client-type.donor-type
+          .client-type-content
+            h1.base-text.headline3.orange.upper
+              | Donante
+            h2.base-text.title2
+              | ¿Sos un ente gastronómico y tenés excedente de comida que puede ser consumida?
+            p.base-text.text1
+              | ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación.
+        .client-type.volunteer-type
+          .client-type-content
+            h1.base-text.headline3.orange.upper
+              | Comedor
+            h2.base-text.title2
+              | ¿Querés sumarte a la red de comedores que reciben alimentos?
+            p.base-text.text1
+              | ¡No la tires! Publicá la donación en Proyecto Alimentar y un voluntario validado y certificado pasará a buscar la donación.
     .section
       h1.base-text.headline3
         | ¡Sumate!
@@ -88,122 +90,122 @@ html(lang='en')
         input.base-input(type='email')
         button.base-button
           | Enviar
-    .section.grey
-      h1.base-text.headline3
+    .section.grey.section-facts
+      h1.base-text.headline3.white
         | Lorem ipsum
       .facts.row.center-xs
-        .fact.col-xs-3
-          h1.base-text.headline1
+        .fact.col-xs-4
+          h1.base-text.headline1.orange
             | 1.500.000
-          h2.base-text.title2
+          h2.base-text.title2.white
             | Toneladas
-          p.base-text.text1
+          p.base-text.text1.white
             | Cantidad de comida apta para ser consumido que se desperdicia por año en Argentina
-        .fact.col-xs-3
-          h1.base-text.headline1
+        .fact.col-xs-4
+          h1.base-text.headline1.orange
             | 550.000
-          h2.base-text.title2
+          h2.base-text.title2.white
             | Platos
-          p.base-text.text1
+          p.base-text.text1.white
             | Cantidad de platos de comida que se estima se desperdician por día solo en la Ciudad Autónoma de Buenos Aires.
-        .fact.col-xs-3
-          h1.base-text.headline1
+        .fact.col-xs-4
+          h1.base-text.headline1.orange
             | 600.000
-          h2.base-text.title2
+          h2.base-text.title2.white
             | Personas
-          p.base-text.text1
+          p.base-text.text1.white
             | Son las que concurren cada día a los centros comunitarios de la red de Cáritas de todo el país.
-    .section
-      h1.base-text.headline3
+    .section.participants-section
+      h1.base-text.headline3.orange
         | Quienes somos
-      p.base-text.text2
+      p.base-text.text2.grey
         | Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
       .participants
         .participant
           img.participant-image(src='assets/angeles_benitez.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | Angeles Benitez
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Reaserch
-          p.base-text.text1
+          p.base-text.text1.grey
             | fghjkl
         .participant
           img.participant-image(src='assets/florencia_williams.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | FLORENCIA WILLIAMS
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Redacción legislativa
-          p.base-text.text1
+          p.base-text.text1.grey
             | Abogada
         .participant
           img.participant-image(src='assets/leonel_badi.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | LEONEL BADI
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Desarrollador
-          p.base-text.text1
+          p.base-text.text1.grey
             | Estudiante de ingeniería en informática ITBA
         .participant
           img.participant-image(src='assets/nicolas_buchhalter.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | NICOLÁS BUCHHALTER
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Desarrollador
-          p.base-text.text1
+          p.base-text.text1.grey
             | Estudiante de ingeniería en informática ITBA
         .participant
           img.participant-image(src='assets/paula_albarracin.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | PAULA ALBARRACIN
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | ?
-          p.base-text.text1
-            | Estudiante de Arquitectura y Voluntaria en Un Techo para mi País. Participante del Bootcamp Trama, Idea y Emprendimiento en Alimentar.
+          p.base-text.text1.grey
+            | Estudiante de Arquitectura FADU
         .participant
           img.participant-image(src='assets/rocio_rivera.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | ROCÍO RIVERA
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | ?
-          p.base-text.text1
+          p.base-text.text1.grey
             | Lic. en Comercialización y Lic. en Comercio Internacional.
         .participant
           img.participant-image(src='assets/sofia_mazzina.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | SOFIA MAZZINA
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Research
-          p.base-text.text1
+          p.base-text.text1.grey
             | Est. De Psicología USAL
         .participant
           img.participant-image(src='assets/anabella_mazzuca.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | ANABELLA MAZZUCA
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Diseñadora
-          p.base-text.text1
+          p.base-text.text1.grey
             | Estudiante Diseño Gráfico UBA
         .participant
           img.participant-image(src='assets/santiago_bermudez.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | SANTIAGO BERMÚDEZ BAGLIETTO
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | ?
-          p.base-text.text1
+          p.base-text.text1.grey
             | ?
         .participant
           img.participant-image(src='assets/francisco_depascuali.png')
-          h1.base-text.title1
+          h1.base-text.title1.black
             | FRANCISCO DEPASCUALI
-          h2.base-text.text3
+          h2.base-text.text3.orange
             | Desarrollador
-          p.base-text.text1
+          p.base-text.text1.grey
             | Estudiante de ingeniería en informática ITBA
     footer.footer
       img.logo(src='https://placehold.it/200x50')
       a.social-link(href='#')
         img(src='assets/ic_facebook.svg')
-      span.base-text.text2
+      span.base-text.text2.orange
         | lorem.ipsum@loremipsum.com
 
     // inject:js
