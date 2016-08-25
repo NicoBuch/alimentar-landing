@@ -22,7 +22,7 @@ html(lang='en')
       .header-actions
         a.social-link(href='#')
           img(src='assets/ic_facebook.svg')
-    .section.section-main.row.center-xs
+    .section.section-main
       .main-content-wrapper
         h1.base-text.headline2
           | Entre todos llevemos un plato de comida a la mesa
@@ -81,17 +81,51 @@ html(lang='en')
               | ¿Querés sumarte a la red de comedores que reciben alimentos?
             p.base-text.text1
               | ¡Es muy simple! Inscribite a la red de comedores y comenzá a recibir los alimentos donados.
-    .section
-      h1.base-text.headline3
+    .section.section-contact
+      h1.base-text.headline3.upper
         | ¡Sumate!
-      p.base-text.section-description
+      p.base-text.text2.section-description.grey
         | Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
       form.contact-form
-        input.base-input(type='email')
+        .input-wrapper
+          label.base-text.title1.input-label
+            | Nombre
+          input.field.base-input(type='text')
+        .input-wrapper
+          label.base-text.title1.input-label
+            | Email
+          input.field.base-input(type='email')
+        .input-wrapper-inline
+          .radio-wrapper
+            .radio
+              input.field.radio-input(type='radio' name='type')
+              .radio-container
+              .radio-fill
+            label.base-text.title1.radio-label
+              | Voluntario
+          .radio-wrapper
+            .radio
+              input.field.radio-input(type='radio' name='type')
+              .radio-container
+              .radio-fill
+            label.base-text.title1.radio-label
+              | Donante
+          .radio-wrapper
+            .radio
+              input.field.radio-input(type='radio' name='type')
+              .radio-container
+              .radio-fill
+            label.base-text.title1.radio-label
+              | Comedor
+
+        .input-wrapper
+          label.base-text.title1.input-label
+            | Comentario
+          textarea.field.base-textarea
         button.base-button
           | Enviar
     .section.grey.section-facts
-      h1.base-text.headline3.white
+      h1.base-text.headline3.white.upper
         | El problema en cifras
       .facts.row.center-xs
         .fact.col-xs-4
@@ -116,7 +150,7 @@ html(lang='en')
           p.base-text.text1.white
             | Son las que concurren cada día a los centros comunitarios de todo el país.
     .section.participants-section
-      h1.base-text.headline3.orange
+      h1.base-text.headline3.orange.upper
         | Quienes somos
       p.base-text.text2.grey
         | Somos un grupo de jóvenes de diferentes disciplinas que busca combinar su pasión y conocimiento para generar un impacto
@@ -124,7 +158,7 @@ html(lang='en')
         .participant
           img.participant-image(src='assets/angeles_benitez.png')
           h1.base-text.title1.black
-            | ÁNGELES ENIÍTEZ
+            | ÁNGELES BENIÍTEZ
           h2.base-text.text3.orange
             | Reaserch
           p.base-text.text1.grey

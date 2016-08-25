@@ -84,11 +84,19 @@
 
 // input
 
-.base-input {
+.field {
   border: 2px solid $orange1;
-  height: 50px;
-  max-width: 435px;
+  box-sizing: border-box;
   width: 100%;
+}
+
+.base-input {
+  height: 50px;
+}
+
+.base-textarea {
+  height: 120px;
+  resize: none;
 }
 
 // button
@@ -110,4 +118,60 @@
   &:focus {
     background: $orange2;
   }
+}
+
+// radio
+
+.radio {
+  width: $radio-size;
+  height: $radio-size;
+  position: relative;
+  display: inline-block;
+}
+
+.radio-input {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.radio-container {
+  border-radius: 100%;
+  border: 2px solid $radio-border;
+  background: $radio-background;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.radio-fill {
+  background: $radio-fill;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease-in, height 0.2s ease-in;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.radio-input:checked ~ .radio-fill {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  transition: width 0.2s ease-out, height 0.2s ease-out;
 }
