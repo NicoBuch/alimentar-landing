@@ -2,6 +2,10 @@ h1,h2,h3,h4,h5,h6,p,span,a,button {
   margin: 0;
 }
 
+body {
+  background: $white;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
