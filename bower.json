@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "font-awesome": "~4.6.3"
+    "font-awesome": "~4.6.3",
+    "flexboxgrid": "^6.3.2"
   }
 }
