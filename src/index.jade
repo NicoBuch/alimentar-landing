@@ -88,33 +88,33 @@ html(lang='en')
         | ¡Sumate!
       p.base-text.text2.section-description.grey
         | Si querés participar, completá el siguiente formulario o escribinos directamente a info@proyectoalimentar.org
-      form.contact-form
+      form.contact-form(action='http://alimentar-mailing.herokuapp.com/mailing' method='post' id='form')
         .input-wrapper
           label.base-text.title1.input-label
             | Nombre
-          input.field.base-input(type='text')
+          input.field.base-input(type='text' name='name')
         .input-wrapper
           label.base-text.title1.input-label
             | Email
-          input.field.base-input(type='email')
+          input.field.base-input(type='email' name='email')
         .input-wrapper-inline
           .radio-wrapper
             .radio
-              input.field.radio-input(type='radio' name='type')
+              input.field.radio-input(type='radio' name='user_type' value='Voluntario')
               .radio-container
               .radio-fill
             label.base-text.title1.radio-label
               | Voluntario
           .radio-wrapper
             .radio
-              input.field.radio-input(type='radio' name='type')
+              input.field.radio-input(type='radio' name='user_type' value='Donante')
               .radio-container
               .radio-fill
             label.base-text.title1.radio-label
               | Donante
           .radio-wrapper
             .radio
-              input.field.radio-input(type='radio' name='type')
+              input.field.radio-input(type='radio' name='user_type' value='Comedor')
               .radio-container
               .radio-fill
             label.base-text.title1.radio-label
@@ -123,7 +123,7 @@ html(lang='en')
         .input-wrapper
           label.base-text.title1.input-label
             | Comentario
-          textarea.field.base-textarea
+          textarea.field.base-textarea(name='comment' form='form')
         button.base-button
           | Enviar
     .section.grey.section-facts
