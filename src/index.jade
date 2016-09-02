@@ -5,6 +5,7 @@ html(lang='en')
     meta(charset="UTF-8")
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(content='width=1280' name='viewport')
+    link(rel='shortcut icon' href='assets/favicon.ico')
     link(href='/css/vendor.css', rel='stylesheet')
     link(href='/css/application.css', rel='stylesheet')
     script.
@@ -88,7 +89,7 @@ html(lang='en')
         | ¡Sumate!
       p.base-text.text2.section-description.grey
         | Si querés participar, completá el siguiente formulario o escribinos directamente a info@proyectoalimentar.org
-      form.contact-form(action='http://alimentar-mailing.herokuapp.com/mailing' method='post' id='form')
+      form.contact-form(id='form')
         .input-wrapper
           label.base-text.title1.input-label
             | Nombre
