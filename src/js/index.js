@@ -7,9 +7,10 @@
     $.post(
       'http://alimentar-mailing.herokuapp.com/mailing',
       $(this).serialize()
-    );
-    $.growl.notice({ title: 'Gracias por enviarnos tu contacto!', message: 'La comida no se tira' });
-    $(this).trigger('reset');
+    ).done(function() {
+      $.growl.notice({ title: 'Gracias por enviarnos tu contacto!', message: 'La comida no se tira' });
+      $('#form').trigger('reset');
+    });
     return false;
   });
 })();
