@@ -5,23 +5,24 @@ html(lang='en')
     meta(charset="UTF-8")
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(content='width=1280' name='viewport')
+    meta(property='og:image' content='assets/img_fb_sharing-01.png')
+    meta(property='og:image:width' content='1200')
+    meta(property='og:image:height' content='630')
+    link(rel='icon' type='image/png' href='assets/favicon.png')
     link(href='/css/vendor.css', rel='stylesheet')
     link(href='/css/application.css', rel='stylesheet')
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', '<!-- @echo GOOGLE_ANALYTICS_TRACK_ID -->', {
-        'cookieDomain': 'none'
-      });
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-83722185-1', 'auto');
       ga('send', 'pageview');
   body
     header.header
       img.header-logo.logo(src='assets/ic_header_logo.svg')
       .header-actions
-        a.social-link(href='#')
+        a.social-link(href='https://www.facebook.com/Proyecto-Alimentar-1059783267444904/')
           img(src='assets/ic_facebook.svg')
     .section.section-main
       .main-content-wrapper
@@ -56,7 +57,7 @@ html(lang='en')
           h1.base-text.headline4.upper
             | Comida entregada
           p.base-text.text1.grey
-            | El voluntario entrega la comida en el comedor social mas cercano
+            | El voluntario entrega la comida en el comedor social más cercano
     .section.section-volunteer.orange
       .section-content-wrapper
         h1.base-text.headline3.upper
@@ -87,34 +88,35 @@ html(lang='en')
       h1.base-text.headline3.upper
         | ¡Sumate!
       p.base-text.text2.section-description.grey
-        | Si querés participar, completá el siguiente formulario o escribinos directamente a info@proyectoalimentar.org
-      form.contact-form
+        | 'Si querés participar, completá el siguiente formulario o escribinos directamente a #{''}
+        b info@proyectoalimentar.org
+      form.contact-form(id='form')
         .input-wrapper
           label.base-text.title1.input-label
             | Nombre
-          input.field.base-input(type='text')
+          input.field.base-input(type='text' name='name')
         .input-wrapper
           label.base-text.title1.input-label
             | Email
-          input.field.base-input(type='email')
+          input.field.base-input(type='email' name='email')
         .input-wrapper-inline
           .radio-wrapper
             .radio
-              input.field.radio-input(type='radio' name='type')
+              input.field.radio-input(type='radio' name='user_type' value='Voluntario')
               .radio-container
               .radio-fill
             label.base-text.title1.radio-label
               | Voluntario
           .radio-wrapper
             .radio
-              input.field.radio-input(type='radio' name='type')
+              input.field.radio-input(type='radio' name='user_type' value='Donante')
               .radio-container
               .radio-fill
             label.base-text.title1.radio-label
               | Donante
           .radio-wrapper
             .radio
-              input.field.radio-input(type='radio' name='type')
+              input.field.radio-input(type='radio' name='user_type' value='Comedor')
               .radio-container
               .radio-fill
             label.base-text.title1.radio-label
@@ -123,7 +125,7 @@ html(lang='en')
         .input-wrapper
           label.base-text.title1.input-label
             | Comentario
-          textarea.field.base-textarea
+          textarea.field.base-textarea(name='comment' form='form')
         button.base-button
           | Enviar
     .section.grey.section-facts
@@ -136,14 +138,14 @@ html(lang='en')
           h2.base-text.title2.white
             | Toneladas
           p.base-text.text1.white
-            | De comida apta para ser consumida que se desperdicia por año en Argentina.
+            | De comida apta para ser consumida se desperdicia por año en Argentina.
         .fact.col-xs-4
           h1.base-text.headline1.orange
             | 550.000
           h2.base-text.title2.white
             | Platos
           p.base-text.text1.white
-            | De comida que se desperdician a diario en CABA.
+            | De comida se desperdician a diario en CABA.
         .fact.col-xs-4
           h1.base-text.headline1.orange
             | 600.000
@@ -153,7 +155,7 @@ html(lang='en')
             | Son las que concurren cada día a los centros comunitarios de todo el país.
     .section.participants-section
       h1.base-text.headline3.orange.upper
-        | Quienes somos
+        | Quiénes somos
       p.base-text.text2.grey
         | Somos un grupo de jóvenes de diferentes disciplinas que busca combinar su pasión y conocimiento para generar un impacto
       .participants
@@ -162,7 +164,7 @@ html(lang='en')
           h1.base-text.title1.black
             | ÁNGELES BENIÍTEZ
           h2.base-text.text3.orange
-            | Reaserch
+            | Investigación
           p.base-text.text1.grey
             | Licenciada en Comercio Internacional y Profesional Gastronómico
         .participant
@@ -170,9 +172,9 @@ html(lang='en')
           h1.base-text.title1.black
             | FLORENCIA WILLIAMS
           h2.base-text.text3.orange
-            | Redacción legislativa
+            | Coordinación legal
           p.base-text.text1.grey
-            | Abogada
+            | Abogada. Magíster en Derecho Tributario
         .participant
           img.participant-image(src='assets/leonel_badi.png')
           h1.base-text.title1.black
@@ -180,7 +182,7 @@ html(lang='en')
           h2.base-text.text3.orange
             | Desarrollador
           p.base-text.text1.grey
-            | Estudiante de Ingeniería en Informática ITBA
+            | Estudiante de Ingeniería en Informática
         .participant
           img.participant-image(src='assets/nicolas_buchhalter.png')
           h1.base-text.title1.black
@@ -188,15 +190,15 @@ html(lang='en')
           h2.base-text.text3.orange
             | Desarrollador
           p.base-text.text1.grey
-            | Estudiante de Ingeniería en Informática ITBA
+            | Estudiante de Ingeniería en Informática
         .participant
           img.participant-image(src='assets/paula_albarracin.png')
           h1.base-text.title1.black
             | PAULA ALBARRACIN
           h2.base-text.text3.orange
-            | Research
+            | Coordinadora
           p.base-text.text1.grey
-            | Estudiante de Arquitectura FADU
+            | Estudiante de Arquitectura
         .participant
           img.participant-image(src='assets/rocio_rivera.png')
           h1.base-text.title1.black
@@ -204,15 +206,15 @@ html(lang='en')
           h2.base-text.text3.orange
             | Coordinadora
           p.base-text.text1.grey
-            | Lic. en Comercialización y Lic. en Comercio Internacional.
+            | Lic. en Comercialización y Lic. en Comercio Internacional
         .participant
           img.participant-image(src='assets/sofia_mazzina.png')
           h1.base-text.title1.black
             | SOFIA MAZZINA
           h2.base-text.text3.orange
-            | Research
+            | Investigación
           p.base-text.text1.grey
-            | Estudiante De Psicología USAL
+            | Estudiante De Psicología
         .participant
           img.participant-image(src='assets/anabella_mazzuca.png')
           h1.base-text.title1.black
@@ -220,7 +222,7 @@ html(lang='en')
           h2.base-text.text3.orange
             | Diseñadora
           p.base-text.text1.grey
-            | Estudiante Diseño Gráfico UBA
+            | Estudiante Diseño Gráfico
         .participant
           img.participant-image(src='assets/santiago_bermudez.png')
           h1.base-text.title1.black
@@ -228,7 +230,7 @@ html(lang='en')
           h2.base-text.text3.orange
             | Coordinador
           p.base-text.text1.grey
-            | Ingeniero en Informática ITBA
+            | Ingeniero en Informática
         .participant
           img.participant-image(src='assets/francisco_depascuali.png')
           h1.base-text.title1.black
@@ -236,11 +238,17 @@ html(lang='en')
           h2.base-text.text3.orange
             | Desarrollador
           p.base-text.text1.grey
-            | Estudiante de Ingeniería en Informática ITBA
+            | Estudiante de Ingeniería en Informática
+        .participant
+          img.participant-image(src='assets/piero_crozzoli.png')
+          h1.base-text.title1.black
+            | PIERO CROZZOLI
+          h2.base-text.text3.orange
+            | Coordinador
+          p.base-text.text1.grey
+            | Estudiante de Ingeniería Mecánica
     footer.footer
-      img.logo(src='assets/ic_header_logo.svg')
-      a.social-link(href='#')
-        img(src='assets/ic_facebook.svg')
+      img.logo(src='assets/ic_footer_logo.svg')
       span.base-text.text2.orange
         | info@proyectoalimentar.org
 

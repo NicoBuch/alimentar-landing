@@ -16,6 +16,12 @@ body {
   height: 90px;
   align-items: center;
   padding: 0 40px;
+  position: fixed;
+  background: $white;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
+  top: 0;
 }
 
 .section {
@@ -37,6 +43,9 @@ body {
   &.section-main {
     height: calc(100vh - 90px);
     background: url('../assets/bc_home.png');
+    box-sizing: border-box;
+    margin-top: 90px;
+    background-attachment: fixed;
   }
 }
 
@@ -215,7 +224,8 @@ body {
   padding: 60px 20px;
 
   .logo {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    height: 104px;
   }
 
   .social-link {
@@ -247,12 +257,25 @@ body {
     display: block;
     margin-bottom: 10px;
   }
+
+  .base-input {
+    padding-left: 10px;
+  }
+
+  .base-textarea {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
 }
 
 .input-wrapper-inline {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  .radio-input {
+    left: 0;
+  }
 }
 
 
